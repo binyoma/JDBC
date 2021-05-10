@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group 'org.aio'
+version '1.0-SNAPSHOT'
+
+javafx {
+    version = "16"
+    modules = ["javafx.controls","javafx.base","javafx.graphics","javafx.fxml"]
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+
+    implementation 'mysql:mysql-connector-java:8.0.24'
+}
+
+test {
+    useJUnitPlatform()
+}
+mainClassName = 'org.aio.App'

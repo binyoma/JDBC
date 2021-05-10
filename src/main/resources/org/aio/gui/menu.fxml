@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.aio.gui.MenuController">
+   <children>
+      <Label layoutX="137.0" layoutY="26.0" text="Bienvenue chez Papyrus">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="infoFournisseur" layoutX="152.0" layoutY="131.0" mnemonicParsing="false" onAction="#showFournisseur" prefHeight="25.0" prefWidth="280.0" text="Trouver les informations d'un fournisseur " />
+      <Button fx:id="newFournisseur" layoutX="154.0" layoutY="246.0" mnemonicParsing="false" onAction="#addFournisseur" prefHeight="25.0" prefWidth="273.0" text="Ajouter un fournisseur" />
+      <Button fx:id="infoCommand" layoutX="155.0" layoutY="188.0" mnemonicParsing="false" onAction="#showCommand" prefHeight="25.0" prefWidth="273.0" text="Afficher les commandes" />
+   </children>
+</AnchorPane>
